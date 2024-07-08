@@ -15,7 +15,8 @@ body {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  position: relative; }
 
 a {
   color: var(--link-color); }
@@ -118,6 +119,8 @@ h1 {
     font-weight: normal; }
     .sidebar-menu li.sub a {
       padding-left: 1.5em; }
+      .sidebar-menu li.sub a.active {
+        background-color: #F0F7FE; }
 
 body.casestudy .sidebar-menu li.active a, body.casestudy .sidebar-menu li.active a:hover {
   color: white;
@@ -159,12 +162,14 @@ ul.action-list > li {
 
 .playbook-bottom-navigation {
   display: flex;
-  margin: 5rem 0;
+  margin: 3rem 0;
   justify-content: space-between;
   font-weight: bold; }
   .playbook-bottom-navigation a {
     color: #000;
     text-decoration: none; }
+  .playbook-bottom-navigation a.btn.btn-primary {
+    color: #fff; }
 
 .copyright {
   padding: 2vh 0;
